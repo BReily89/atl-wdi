@@ -38,11 +38,31 @@ The issue body should have:
 
 -   Answers to each of the questions above, in the following format:
 
-    ```text
-    1. Answer one.
-    2. A) Answer two, part one, B) Answer two, part two
-    ...
-    ```
 
+    1. Homework submission needs to be at 80% or higher
+Attendance must be consistent (please see the Attendance Policy)
+All unit projects need be submitted and presented to the instructional team and should meet project rubric expectations
+    5
+2. https://www.youtube.com/playlist?list=PLdnONIhPScSToZztXRHyKZTQEsE30luMx
+ 5
+3. Javascript the Good Parts
+5
+4. Important componets in your commit message are to mention 1) why the change is necessary, 2)how your commit fixes the issue 3)and what affect the commit has.
+5
+5. A bug report must contain a loose paragraph explaining what you thought the error was, what it turned out to be and how you solved it.
+5
+6. Three git tutorials
+    1. https://git-scm.com/documentation
+    2. https://github.com/ATL-WDI-Curriculum/atl-wdi/wiki/Git-Cheatsheet
+    3. https://www.atlassian.com/git/tutorials
+    5
+7. Basic UI styling tips are to not use true black as a background, add space, especially white space. Use fonts that arent the standard. Add buttons and links, but dont go too crazy
+5
+8. The maximum number of absences a student can have are 3 or 6 tardees.
+5
+9. https://www.programmableweb.com/apis/directory
+5
+10. The twon holidas we have off are labor day and Veterans day (observance)
+5
 -   A 'comfort' score on how you feel about your answers, from 1 (very
     uncomfortable) to 5 (very comfortable)
