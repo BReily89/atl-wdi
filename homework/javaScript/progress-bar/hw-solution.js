@@ -20,10 +20,7 @@ var timerUI = {
     var timeElapsed = 100 - timerValue;
     document.getElementsByClassName('progress-bar')[0].style.width = timeElapsed + '%';
     //// REACH
-    // var progress = 100 - timerValue;
-    // var bars = document.getElementsByClassName('progress-bar');
-    // for (var i = 0; i < bars.length; i++) {
-    //   bars[i].style.width = progress + '%';
+    at Mocha.run (/Users/brandonreily/Documents/ga/atl-wdi/homework/javaScript/progress-bar/node_modules/mocha/lib/mocha.js:513:10)
     // }
   },
   drawLitFuses: function(timerValue){
