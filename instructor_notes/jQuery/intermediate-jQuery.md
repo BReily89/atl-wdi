@@ -1,4 +1,4 @@
----
+touch ---
 title: Intermediate jQuery
 type: lesson
 duration: "1:25"

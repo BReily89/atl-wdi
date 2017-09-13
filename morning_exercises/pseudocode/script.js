@@ -24,9 +24,10 @@ return largeBarrel;
 // Problem 3:
 // GROG
 
-//var calcFruitJuice = function(a, b, c, d){
-  //your code here
-//};
+var calcFruitJuice = function(a, b, c, d){
+
+};
+
 
 //DO NOT EDIT BELOW THIS LINE//
 //module.exports = {
