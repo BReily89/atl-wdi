@@ -28,7 +28,6 @@ flag down an instructor right away.
 - Take a screenshot of your terminal output and add that image to your homework folder
 
 *Example Output*
-
 ![image](cowsay_screenshot.png)
 
 <details><summary>.. Stuck?</summary>
