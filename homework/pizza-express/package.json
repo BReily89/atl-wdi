@@ -1,17 +1,17 @@
 {
   "name": "pizza-express",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
+  "dev":"nedemon servfer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Brandon",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.4"
-  }
-}
-"dependencies": {
-  "express": "^4.13.4"
+    "express": "^4.15.4",
+    "save": "^2.3.1"
+  },
+  "devDependencies": {},
+  "description": ""
 }

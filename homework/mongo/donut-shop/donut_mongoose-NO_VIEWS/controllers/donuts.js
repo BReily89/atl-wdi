@@ -1,5 +1,11 @@
 //======================
 // REQUIREMENTS
+const express = require('express')
+const mongoose = require('mongoose')
+
+const app = express();
+
+mongoose.connect('mongodb://localhost/donut_store');
 //======================
 // require express, router, mongoose, Donut schema
 

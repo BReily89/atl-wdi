@@ -3,10 +3,17 @@ var path        = require('path');
 var logger      = require('morgan');
 var express     = require('express');
 var hbs         = require('hbs');
+const bodyParser = require('body-parser');
+
 /* app settings*/
 var app         = express();
 var port        = process.env.PORT || 3000;
+const toDosControllers = require(".controllers.todos");
 /* set up the application params*/
+
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 // log
 app.use( logger('dev'));
@@ -18,6 +25,8 @@ app.set('view engine', 'hbs');
 app.get('/', function(req,res) {
   res.send('This is our Home Page');
 });
+//Controllers
+app.set("/todos", toDosControllers);
 
 /* INDEX TODOS */
 app.get('/todos', function(req,res) {
