@@ -14,5 +14,6 @@ const donutSchema = new Schema(
         })
     
 
-
+const donutModel = mongoose.model('donut', donutSchema);
 //export your donut with module.exports()
+module.exports = donutModel 
