@@ -12,6 +12,7 @@ const donutSchema = new Schema(
             price: Number,
             qty: Number
         })
+        //data-type need to be capitalized... aka 'string' and 'number'
     
 
 const donutModel = mongoose.model('donut', donutSchema);

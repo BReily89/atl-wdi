@@ -1,0 +1,29 @@
+1)Can we use npm with React or do we have to use yarn?
+    1) They are both packages and we can use both npm and yarn
+
+2)We are using JSX to write HTML inside of our React. Are we required to use JSX with React? 
+    2) You are not required to use JSX, which is a JavaScript syntax extension.It is recommended. An alternative to JSX would be JavaScript 
+3)Does React re-render the entire component when one part of it changes?
+    3)React only takes re-renders the DOM to match React Elements
+4)Are there any alternatives?
+    4)JaveScript
+
+
+5)Should we ever change props (or parameters) inside of a component?
+    5) We should never change props inside of components because there are called 'pure' which means they do not attempt top change inputs and alway return the same results
+
+6)Are all components classes?
+    6)Not all components are classes, some are functions.
+
+7)List five "Synthetic Events" provided by React:
+    7)-1sonClick -2onDragOver -3onCanPlayThrough (media Event),-4onDrop 5-onMouseDown
+8)Do we have to use ES6 syntax with React?
+    8)You are not required to, but it is recommended
+9)Where can I go to check out React's built-in Accessibility features?
+    9) https://reactjs.org/docs/accessibility.html
+
+    I believe you can access the accessibility features within the JSX language itself
+10)List five React Component Lifecycle Methods:
+    10) 1)constructor, 2) render) 3)forceUpdate 4)displayName 5)shouldComponentUpdate
+11)Where would I go to check out React's built-in testing tools?
+    11)react-axe module

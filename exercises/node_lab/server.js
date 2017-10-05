@@ -9,7 +9,7 @@ console.log("I'm listening on port: 3001");
 
 server.on("request", function(request, response) {
   var urlObj = urlParser.parse(request.url); //
-  var pathname = urlObj.pathname; // parsing our the important info in the url
+  var pathname = urlObj.pathname; // parsing out the important info in the url
 
   console.log("requested: " + pathname);
   response.writeHead(200, { "Content-Type": "text/html" });
@@ -19,7 +19,7 @@ server.on("request", function(request, response) {
 
   switch(pathname){
     case '/funtimes':
-      response.write(`<h1>${fun_stuff}!</h1>`);
+      response.write(`<h1>${fun_nodestuff}!</h1>`);
       response.write(`<ul>`);
       funThings.forEach(thing => {
         response.write(`<li>${thing}</li>`);

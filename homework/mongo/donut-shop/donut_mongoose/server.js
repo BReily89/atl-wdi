@@ -42,6 +42,14 @@ app.use('/', donutsController);
 //CONNECT MONGOOSE TO "donut_store"
 mongoose.connect('mongodb://localhost/donut_store');
 
+const db = mongoose.connection;
+
+db.on('open' , => {
+console.log 'mongoose is connected'
+)}
+db.on('error', err)
+
+
 
 
 //CREATE THE MONGOOSE CONNECTION and SET APP TO LISTEN to 3000
