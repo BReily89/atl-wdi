@@ -25,6 +25,11 @@ challenge 2
     you can put the "gToNumber" in brackets and add it to g and it should return 2 + "2"
 
     Challenge 5;
-1.
+1.def calc(two) 
+yield sum
+end
+rate = 2
+myCalc = by() 
+print "total "
 
 
