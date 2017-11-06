@@ -6,52 +6,20 @@ import Movie from './components/Movie';
 //import Example from './omdbExample.json'
 
 class App extends Component {
-  constructor(){
-    super();
-    this.state = {
-      title: ''
-    }
+  state = {
+    movie: example
   }
 
- //Update these methods to make axios calls to OMDB and update this.state.movie with the response from the server
- _searchByTitle = (event) => {
-   event.preventDefault()
-  const title = event.target.title.value
-  axios.get(`http://www.omdbapi.com/?apikey=d31f1a94&t=${title}`)
-   .then((res) => {
-    console.log(res)
-      this.setState({
-        title: res.data.Title,
-        year: res.data.Year,
-        director: res.data.Director,
-        genre: res.data.Genre,
-        plot: res.data.Plot 
-      })
-    }).catch((error) => {
-        console.log(error)
-    })
-}
+  //Update these methods to make axios calls to OMDB and update this.state.movie with the response from the server
+  searchByTitle = () => {
+    console.log("Search by Title");
+  }
 
- _searchById = (event) => {
-   const id = event.target.id.value
-    axios.get(`http://www.omdbapi.com/?apikey=d31f1a94&i=${id}`) 
-    .then((res) => {
-             this.setState({
-        title: res.data.Title,
-        year: res.data.Year,
-        director: res.data.Director,
-        genre: res.data.Genre,
-        plot: res.data.Plot 
-      })
-       }).catch((error) => {
-            console.log(error)
-        })
-      }
+  searchById = () => {
+    console.log("Search by ID");
+  }
 
-//  componentWillMount(){
-//     this._searchById()
- // }
-  //Pass _searchByTitle, _searchById, and this.state.movie to it's appropriate child components.
+  //Pass searchByTitle, searchById, and this.state.movie to it's appropriate child components.
   render() {
     return (
       <div className="App">
