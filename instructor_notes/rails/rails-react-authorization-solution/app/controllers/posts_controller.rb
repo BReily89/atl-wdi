@@ -1,9 +1,20 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!
-  load_and_authorize_resource  only: [:destroy]
+  load_and_authorize_resource only: [:update, :destroy]
 
   def index
-    @posts = Post.all
+    @users = User.joins(:posts).includes(:posts).all
+
+    @posts = @users.flat_map do |user|
+      user.posts.map do |post|
+        {
+            id: post.id,
+            title: post.title,
+            content: post.content,
+            belongs_to_current_user: post.user == user
+        }
+      end
+    end
 
     render json: @posts
   end
@@ -26,6 +37,7 @@ class PostsController < ApplicationController
   end
 
   def update
+    @user = current_user
     @post = Post.find(params[:id])
 
 
